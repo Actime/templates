@@ -90,7 +90,11 @@
                     				    {{r.competition}}
                     				</td>
                     				<td>
-                    				    ----1------
+                    					<p>
+	                    				    {% for tr in r|get_time_registers %}
+	                    				    	{{ tr.time }}<br>
+	                    				    {% endfor %}
+                    				    </p>
                     				</td>
                     				<td>
                     				    lugar
