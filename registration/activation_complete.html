@@ -21,9 +21,10 @@
         <div class="row">
             <div class="alert alert-success" role="alert">
                 <p>
-                    {% trans "Your account is now activated." %}
+                    {% trans "Tu cuenta ahora está activa." %}
                     {% if not user.is_authenticated %}
-                    {% trans "You can log in." %}
+                        {% trans "Puedes logearte desde." %}
+                        <a href="/accounts/login">Log In</a> o <a href="/accounts/register">Registro</a>
                     {% endif %}
                 </p>
             </div>
